@@ -1,0 +1,6 @@
+<?php
+
+it('gives back successful response for home page', function () {
+    \Pest\Laravel\get(route('home'))
+        ->assertOk();
+});
