@@ -1,0 +1,33 @@
+<?php
+
+namespace Tests\Feature;
+use App\Models\Course;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use  Pest\Laravel;
+
+uses(RefreshDatabase::class);
+
+it('shows page details', function () {
+        $course = Course::factory()->released()->create([
+            'tagline' => 'Course tagline',
+            'image' => 'image.png',
+            'learning' => [
+                'learn Something',
+                'learn This',
+                'learn That',
+                'learn things ',
+            ],
+        ]);
+
+        get(route('courses-details', ['course' => $course]))
+            ->assertOk()
+        ->assertSeeText([
+            $course->title,
+            $course->description,
+
+        ]);
+});
+
+it('shows course video count', function () {
+
+});

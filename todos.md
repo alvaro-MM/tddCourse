@@ -1,17 +1,15 @@
-# TddCourses
+# TddCoursesIES
 
 ## Los invitados pueden
-
-    * Ver la descripcion de los  cursos (Pagina home)
-    * Ver los detalles del curso(pagina)
-    * Comprar un curso(Se accede desde los detalles del curso)
+* Ver la descripción de los cursos (página home)
+* Ver los detalles del curso (página)
+* Comprar un curso (se accede desde los detalles del curso)
 
 ## Los miembros pueden
-
-    * Autenticarse(pagina)
-    * Ver los cursos comprados(pagina)
-    * Ver un curso comprado(pagina)
+* Autenticarse (página)
+* Ver los cursos comprados (página)
+* Ver un curso comprado (página)
 
 ## Los administradores pueden
+* Tweet sobre un curso nuevo
 
-    * Tweet sobre un curso nuevo
